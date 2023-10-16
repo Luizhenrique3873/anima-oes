@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" onclick="fadeIn()">menu</div>
+    <div id="quadrado"></div>
+    <div id="conteudo">Luiz</div>
+    <p>
+        Luiz
+    </p>
+</body>
+<script>
+    function fadeIn() {
+        var quadrado = document.getElementById("quadrado");
+        if(quadrado.style.opacity == '0'){
+            quadrado.style.opacity = '1';
+            quadrado.style.marginLeft = "20px"; // Define a opacidade como 1 para torná-lo visível
+        }
+        else{
+            quadrado.style.opacity = "0";
+            quadrado.style.marginLeft = "0px";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu{
+    background-color: rgb(255, 188, 89);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    user-select: none;
+    transition-duration: 0.3s;
+    transition-property: background-color, box-shadow; 
+    /* a transition property é pra perguntar em quais elementos quero aplicar uma transição */
+    transition-timing-function: ease-in-out;
+
+}
+#menu:hover{
+    background-color: rgb(255, 156, 27);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.471);
+}
+#quadrado{
+    background-color: rgb(79, 79, 160);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    opacity: 0;
+    transition-property: opacity, margin;
+    transition-duration: 0.5s, 0.5s;
+    /* transition: opacity 0.5s, margin 0.5s; mais uma shorthand */
+}
+#conteudo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 10;
+    /* animation: fadeIn 1s ease-in-out forwards; isso é shorthand*/
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    user-select: none;
+    
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    margin: auto;
+}
+
+@keyframes fadeIn {
+    /* 0% {
+        transform: translateY(50px);
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }  assim tambem serve*/
+    from{
+        opacity:0;
+        transform: translatey(50px);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
